@@ -12,7 +12,15 @@ function generateTable(){
             row.appendChild(box)
         }
         console.log(row)
-
     }
+}
 
+function table2(){
+    let table = document.querySelector("#table2");
+    let day = 1;
+    for(let i = 0; i < 365; i++){
+        let box = document.createElement("td");
+        box.innerHTML = "";
+        box.classList.add(`day${i}`)
+    }
 }
